@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+       .calculator-container{
+            width: 240px;
+            height: 250px;
+            padding: 20px;
+            background-color:grey ;
+            border-radius: 8px;
+        }
+        .row{
+            justify-content:  space-between;
+            display: flex;
+            flex-direction: row;
+
+        }
+        .btn{
+            font-size: 20px;
+            height: 38px;
+            width: 230px;
+            padding-bottom: 1px;
+            margin-bottom: 7px;
+            margin-right: 5px;
+            margin-left: 5px;
+            border:1px solid black;
+            box-shadow: 0px 0.5px 0.5px 0.5px black;
+        }
+        .btn:hover{
+            cursor: pointer;
+            box-shadow:0px 1px 1px rgb(177, 237, 177);
+        }
+
+        .bg-red{
+            background-color: red;
+            color: white;
+            border: 0.5px solid white;
+        }
+
+        .input-screen{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            font-size: 40px;
+            background-color: rgb(229, 231, 231);
+            transition: 1sec;
+            
+        }
+
+        .brand{
+            color: white;
+            font-style: italic;
+        }
+        
+   </style>
+</head>
+<body>
+   <div class="calculator-container">
+<span class="brand">CASIO<span>
+    <div class="row">
+        <input type="text" id="input" class="input-screen"/>
+    </div>
+    <div class="row">
+    <button class="btn ">7</button>
+    <button class="btn">8</button>
+    <button class="btn">9</button>
+    <button class="btn bg-red">/</button>
+ </div>
+
+ <div class="row">
+    <button class="btn">4</button>
+    <button class="btn">5</button>
+    <button class="btn">6</button>
+    <button class="btn bg-red">x</button>
+ </div>
+
+
+ <div class="row">
+    <button class="btn">1 </button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    <button class="btn bg-red">-</button>
+ </div>
+
+ <div class="row">
+    <button class="btn">0</button>
+    <button class="btn bg-red">.</button>
+    <button class="btn bg-red">+</button>
+    <button class="btn bg-red">=</button>
+ </div>
+    </div>
+   
+
+</body>
+</html>
